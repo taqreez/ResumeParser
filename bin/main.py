@@ -91,6 +91,7 @@ def transform(observations, nlp):
     observations = field_extraction.extract_fields(observations)
 
     # Archive schema and return
+    logging.info('Archive schema...')
     lib.archive_dataset_schemas('transform', locals(), globals())
     logging.info('End transform')
     return observations, nlp

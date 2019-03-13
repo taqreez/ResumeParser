@@ -36,7 +36,7 @@ Built resume parsing package which extracts text, finds contact details, and che
 Online
 Hergertarian.com github.com/bjherger linkedin.com/in/bjherger hergertarian.wordpress.com/
 
-";Brendan Herger;13herger@gmail.com;('415', '582', '7457');{'developer'};{'Mac'};{'MySQL', 'SQL'};{'R', 'python', 'C', '.NET', 'java'};{'sklearn'};{'Vrije Univesriteit'};set();set();{'github'}
+";Brendan Herger;13herger@gmail.com;('415', '582', '7457');{'developer'};{'Mac'};{'MySQL', 'SQL'};{'java', 'C', 'python', 'R'};{'sklearn'};{'Vrije Univesriteit'};set();set();{'github'}
 2;../data/input/example_resumes\john_smith.docx;.docx;"John Smith 
 
 
@@ -145,7 +145,7 @@ HONORS
 
 Summit County Alumni Association Scholarship					Spring 2014 - Present
 
-Dean’s List									Spring 2013 - Spring 2015";John Smith;sresume@kent.edu;('614', '555', '5555');{'developer', 'Teacher'};set();{'SQL'};{'R', 'C'};set();{'MIT'};set();{'soccer'};set()
+Dean’s List									Spring 2013 - Spring 2015";John Smith;sresume@kent.edu;('614', '555', '5555');{'Teacher', 'developer'};set();{'SQL'};{'R', 'C'};set();{'MIT'};set();{'soccer'};set()
 3;../data/input/example_resumes\Layla_Martin_Resume.pdf;.pdf;;NOT FOUND;;;set();set();set();set();set();set();set();set();set()
 4;../data/input/example_resumes\resume_Meyer.pdf;.pdf;;NOT FOUND;;;set();set();set();set();set();set();set();set();set()
 5;../data/input/example_resumes\SGresume-1.pdf;.pdf;"Sébastien Genty
@@ -244,4 +244,4 @@ Graduated May 2012
 
 Film and digital photography, physics, research, reading, video games, solving problems and fixing things
 
-";Sébastien Genty;sgenty@me.com;('713', '301', '5648');{'developer'};set();{'SQL'};{'JavaScript', 'R', 'python', 'C', 'java', 'Matlab'};{'tensorflow'};set();{'Spanish', 'German', 'English'};{'reading'};set()
+";Sébastien Genty;sgenty@me.com;('713', '301', '5648');{'developer'};set();{'SQL'};{'python', 'R', 'java', 'JavaScript', 'Matlab', 'C', 'C++'};{'tensorflow'};set();{'English', 'Spanish', 'German'};{'reading'};set()

@@ -94,7 +94,7 @@ def term_count(string_to_search, term):
     :rtype: int
     """
     try:
-        regular_expression = re.compile(term, re.IGNORECASE)
+        regular_expression = re.compile(re.escape(term), re.IGNORECASE)
         result = re.findall(regular_expression, string_to_search)
         return len(result)
     except Exception as exception_instance:
