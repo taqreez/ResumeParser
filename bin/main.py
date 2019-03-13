@@ -27,7 +27,7 @@ def main():
     observations = extract()
 
     # Spacy: Spacy NLP
-    nlp = spacy.load('en')
+    nlp = spacy.load('en_core_web_sm')
 
     # Transform data to have appropriate fields
     observations, nlp = transform(observations, nlp)
@@ -40,8 +40,8 @@ def main():
 
 def text_extract_utf8(f):
     try:
-        return unicode(textract.process(f), "utf-8")
-    except UnicodeDecodeError, e:
+        return textract.process(f).decode("utf-8") if not isinstance(f, str) else f
+    except UnicodeDecodeError as e:
         return ''
 
 def extract():

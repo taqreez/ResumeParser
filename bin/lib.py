@@ -63,10 +63,11 @@ def archive_dataset_schemas(step_name, local_dict, global_dict):
     env_variables.update(global_dict)
 
     # Filter down to Pandas DataFrames
-    data_sets = filter(lambda (k, v): type(v) == pandas.DataFrame, env_variables.iteritems())
-    data_sets = dict(data_sets)
+    #data_sets = filter(lambda k,v: type(v) == pandas.DataFrame, env_variables.items())
+    #data_sets = dict(data_sets)
+    data_sets = {k: v for k, v in env_variables.items() if type(v) == pandas.DataFrame}
 
-    for (data_set_name, data_set) in data_sets.iteritems():
+    for (data_set_name, data_set) in data_sets.items():
         # Extract variable names
         logging.info('Working data_set: {}'.format(data_set_name))
 
@@ -96,7 +97,7 @@ def term_count(string_to_search, term):
         regular_expression = re.compile(term, re.IGNORECASE)
         result = re.findall(regular_expression, string_to_search)
         return len(result)
-    except Exception, exception_instance:
+    except Exception as exception_instance:
         logging.error('Error occurred during regex search: {}'.format(exception_instance))
         return 0
 
@@ -118,6 +119,6 @@ def term_match(string_to_search, term):
             return result[0]
         else:
             return None
-    except Exception, exception_instance:
+    except Exception as exception_instance:
         logging.error('Error occurred during regex search: {}'.format(exception_instance))
         return None
