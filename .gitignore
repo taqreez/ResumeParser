@@ -3,6 +3,7 @@
 
 # IDE specfic files
 .idea/*
+.vscode/*
 
 # Compiled python files
 *.pyc
