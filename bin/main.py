@@ -40,7 +40,8 @@ def main():
 
 def text_extract_utf8(f):
     try:
-        return textract.process(f).decode("utf-8") if not isinstance(f, str) else f
+        txt = textract.process(f)
+        return txt.decode("utf-8") if not isinstance(txt, str) else txt
     except UnicodeDecodeError as e:
         return ''
 
